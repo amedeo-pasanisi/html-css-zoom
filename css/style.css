@@ -20,6 +20,12 @@ body{
 .float-left{
     float: left;
 }
+
+.centratura{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 /* FINE generale */
 
 /* header */
@@ -28,17 +34,11 @@ header{
 }
 
 .meeting-id{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     width: 20%;
     margin: 0 auto;
 }
 
 .circles{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     width: 4%;
 }
 
@@ -53,6 +53,18 @@ header{
 /* main */
 main{
     background-color: black;
+    padding: 40px 60px;
+}
+
+.cards{
+    width: 100%;
+    height: 100%;
+}
+
+.card{
+    float: left;
+    width: calc(100% / 5);
+    height: calc(100% / 5);
 }
 /* FINE main */
 
@@ -78,6 +90,15 @@ body.debug{
 
 .debug main{
     height: 87%
+}
+
+.debug .cards{
+    background-color: yellow;
+}
+
+.debug .card{
+    background-color: red;
+    border: 1px solid blue;
 }
 
 .debug footer{
