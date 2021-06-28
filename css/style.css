@@ -30,20 +30,37 @@ header{
 }
 
 .meeting-id{
-    width: 20%;
+    width: 200px;
+    height: 100%;
     margin: 0 auto;
     color: black;
 }
 
 .circles{
-    width: 4%;
+    width: 50px;
+    height: 100%;
 }
 
 .circle{
     width: 10px;
     height: 10px;
     border-radius: 50%;
+}
+
+.circle.red{
+    background-color: rgb(238, 75, 75);
+    border: 1px solid rgb(196, 61, 61);
+}
+
+.circle.yellow{
+    background-color: rgb(255, 225, 93);
+    border: 1px solid rgb(238, 176, 83);
+}
+
+.circle.green{
     background-color: #2EB344;
+    border: 1px solid #217c30;
+    
 }
 /* FINE header */
 
@@ -93,6 +110,10 @@ main .button{
     font-size: 50px;
     color: gray;
 }
+
+.hover:hover i{
+    color: cyan;
+}
 /* FINE main */
 
 /* footer */
@@ -103,10 +124,13 @@ footer{
     height: 50px;
 }
 
+footer .sx,footer .center,footer .dx{
+    height: 100%;
+}
+
 footer .dx{
     background-color: rgb(97, 97, 97);
     color: rgb(236, 59, 59);
-    height: 100%;
 }
 
 footer .button{
@@ -165,9 +189,8 @@ body.debug{
     height: 100%;
 }
 
-.debug .meeting-id, .circles{
+.debug .meeting-id,.debug .circles{
     background-color: red;
-    height: 100%;
 }
 
 .debug .cards{
@@ -190,9 +213,4 @@ body.debug{
 .debug .arrow-dx,.debug .arrow-sx{
     background-color: red;
 }
-
-.debug footer .sx,.debug footer .center,{
-    height: 100%;
-}
-
 /* FINE debug */
