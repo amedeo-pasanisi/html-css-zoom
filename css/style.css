@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* generale */
+body{
+    height: 100vh;
+}
+/* FINE generale */
+
+/* header */
+header{
+    background-color: lightgray;
+}
+/* FINE header */
+
+/* main */
+main{
+    background-color: black;
+}
+/* FINE main */
+
+/* footer */
+footer{
+    background-color: rgb(56, 56, 56);
+}
+/* FINE footer */
+
+/* debug */
+body.debug{
+    background-color: gray;
+}
+
+.debug header{
+    height: 5%;
+}
+.debug main{
+    height: 85%
+}
+
+.debug footer{
+    height: 10%;
+}
+/* FINE debug */
