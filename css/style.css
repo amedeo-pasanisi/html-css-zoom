@@ -12,12 +12,6 @@ body{
     color: white;
 }
 
-.container{
-    width: 70%;
-    margin: 0 auto;
-    height: 100%;
-}
-
 .float-left{
     float: left;
 }
@@ -32,6 +26,7 @@ body{
 /* header */
 header{
     background-color: lightgray;
+    height: 20px;
 }
 
 .meeting-id{
@@ -57,6 +52,7 @@ main{
     background-color: black;
     padding: 40px 0;
     position: relative;
+    height: calc(100% - 70px);
 }
 
 .cards{
@@ -101,7 +97,37 @@ main .button{
 
 /* footer */
 footer{
+    display: flex;
+    justify-content: space-between;
     background-color: rgb(56, 56, 56);
+    height: 50px;
+}
+
+footer .dx{
+    background-color: rgb(97, 97, 97);
+    color: rgb(236, 59, 59);
+    height: 100%;
+}
+
+footer .button{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    margin: 0 10px;
+}
+
+footer .button i{
+    font-size: 20px;
+}
+
+footer .button.arrow-up i{
+    font-size: 1em;
+}
+
+footer .button.share-screen i{
+    color: greenyellow;
 }
 /* FINE footer */
 
@@ -110,17 +136,15 @@ body.debug{
     background-color: gray;
 }
 
-.debug header{
-    height: 3%;
+.container{
+    width: 75%;
+    margin: 0 auto;
+    height: 100%;
 }
 
 .debug .meeting-id, .circles{
     background-color: red;
     height: 100%;
-}
-
-.debug main{
-    height: 87%
 }
 
 .debug .cards{
@@ -144,9 +168,9 @@ body.debug{
     background-color: red;
 }
 
-.debug footer{
-    height: 10%;
+.debug footer .sx,.debug footer .center,{
+    height: 100%;
+    background-color: red;
 }
-
 
 /* FINE debug */
