@@ -110,24 +110,47 @@ footer .dx{
 }
 
 footer .button{
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     height: 100%;
     margin: 0 10px;
 }
 
+footer .button.arrow-up{
+    margin: 0;
+}
+
 footer .button i{
     font-size: 20px;
+    position: relative;
 }
 
 footer .button.arrow-up i{
     font-size: 1em;
 }
 
+footer .button .participants{
+    position: absolute;
+    top: 0;
+    right: 20px;
+}
+
 footer .button.share-screen i{
     color: greenyellow;
+}
+
+footer .button.record>i{
+    padding: 0 6px 2px 0;
+}
+
+footer .button.record .fa-chevron-up{
+    font-size: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
 }
 /* FINE footer */
 
@@ -170,7 +193,6 @@ body.debug{
 
 .debug footer .sx,.debug footer .center,{
     height: 100%;
-    background-color: red;
 }
 
 /* FINE debug */
